@@ -23,12 +23,12 @@ header h1 {
 
 header p {
     margin: 5px 0;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #333;
+    background-color: #000000;
 }
 
 nav ul {
@@ -45,7 +45,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: white;
+    color: rgb(255, 200, 0);
     text-decoration: none;
     padding: 15px 20px;
     transition: background-color 0.3s ease;
@@ -57,19 +57,19 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
-    padding: 20px;
+    padding: 40px;
 }
 
 main section {
     margin: 20px 0;
     padding: 20px;
     background: white;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 main section h2 {
-    color: #222;
+    color: #000000;
 }
 
 main section p {
@@ -79,15 +79,20 @@ main section p {
 /* Footer */
 footer {
     background-color: #222;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 10px 0;
-    position: relative;
+    padding: 0, 0;
+    position: absolute;
     width: 100%;
     bottom: 0;
 }
 
-footer p {
+footer section {
+    background-color: #222;
     margin: 0;
-    font-size: 0.9em;
+    padding: 5px;
+    font-size: 1em;
+    
+
+
 }
