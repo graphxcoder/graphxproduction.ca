@@ -1,9 +1,19 @@
-/* General Styles */
-body {
+
+/*Custom Font*/
+@font-face {
+    font-family: 'Meditative';
+    src: url('C:\Users\Pavel\Documents\Fonts\meditative') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Reset */
+* {
+    font-family: Meditative, sans-serif;
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
+    padding: 0;
     line-height: 1.6;
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -19,6 +29,10 @@ header h1 {
     font-size: 2.5em;
 }
 
+header p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
 /* Navigation Bar */
 nav {
     background-color: #000000;
@@ -47,38 +61,64 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #444;
 }
-
-/* Blog Section */
 .blog-section {
-    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 240px); /* Adjust height based on header and footer */
     text-align: center;
-    background: #f4f4f4;
+    padding: 20px;
+    background-color: #222;
 }
 
 .blog-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color:#fff;
+    margin-bottom: 10px;
 }
 
 .blog-section p {
+    font-size: 1.2rem;
+    color: #fff;
     max-width: 600px;
-    margin: 0 auto 1.5rem;
+    margin: 10px 0;
 }
 
-/* Footer */
 footer {
-    background-color: #222;
-    color: rgb(255, 255, 255);
+    background-color: #000000;
+    color: #fff;
     text-align: center;
-    padding: 0, 0;
-    position: relative;
-    width:100%;
-    bottom: 0px;
+    padding: 20px 0;
 }
 
-footer section {
-    background-color: #222;
-    margin: 0;
-    padding: 5px;
-    font-size: 1em;
+footer #contact h2 {
+    font-size: 1.5rem;
+}
+
+footer .social.icons {
+    margin: 20px 0;
+}
+
+footer .social.icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social.icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(0) invert(1);
+}
+
+footer .social.icons img:hover {
+    transform: scale(1.2);
+    filter: brightness(0) invert(0.5);
+}
+
+footer #copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
 }
