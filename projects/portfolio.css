@@ -1,19 +1,11 @@
-/*Custom Font*/
-@font-face {
-    font-family: 'Meditative';
-    src: url(/fonts/Meditative.ttf) format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* General Styles */
 body {
-    font-family: Meditative, sans-serif;
+    font-family: 'DM Serif Display', serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #222;
+    color: white;
 }
 
 /* Header */
