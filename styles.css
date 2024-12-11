@@ -1,7 +1,7 @@
 /*Custom Font*/
 @font-face {
     font-family: 'Meditative';
-    src: url('C:\Users\Pavel\Documents\Fonts\meditative') format('ttf');
+    src: url(/fonts/Meditative.ttf) format('ttf');
     font-weight: normal;
     font-style: normal;
 }
