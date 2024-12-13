@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Meditative';
+    src: url('/fonts/meditative.woff2') format('woff2'), /* Modern Browsers */
+         url('/fonts/meditative.woff') format('woff');   /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* General Styles */
 body {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Meditative';
     margin: 0;
     padding: 0;
     line-height: 1.6;

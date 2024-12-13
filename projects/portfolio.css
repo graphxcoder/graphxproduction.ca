@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'Meditative';
+    src: url('/fonts/meditative.woff2') format('woff2'), /* Modern Browsers */
+         url('/fonts/meditative.woff') format('woff');   /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* General Styles */
 body {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Meditative';
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -60,7 +68,7 @@ nav ul li a:hover {
     height: auto;
     padding: 0, 0;
     text-align: center;
-    background: #f4f4f4;
+    background: #222;
 }
 
 .about-section img {
@@ -104,13 +112,19 @@ nav ul li a:hover {
 }
 
 .project {
-    background: #f9f9f9;
+    background: #222;
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 5px solid #ffffff;
     border-radius: 5px;
 }
 
+.project h3 {
+    color:#ffffff;
+}
 
+.project p {
+    color:#ffffff;
+}
 /* General Footer Styling */
 footer {
     background-color: #222;
